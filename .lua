@@ -1,5 +1,6 @@
 -- PLS NOTE I JUST MADE THIS CUS I WAS BORED
 for i,v in ipairs(workspace:GetDescendants()) do
+    if v:IsA("Camera") then
     if v:IsA("Decal") then
        v:Destroy()
        elseif v:IsA("Pants") then
@@ -16,5 +17,6 @@ for i,v in ipairs(workspace:GetDescendants()) do
                v:Destroy()
                elseif v:IsA("SpecialMesh") then
                v:Destroy()
+        end
     end
 end
